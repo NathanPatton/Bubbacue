@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+@font-face {
+  font-family: 'veneerregular';
+  src: url("/assets/css/1-tools/veneer/Veneer-webfont.eot");
+  src: url("/assets/css/1-tools/veneer/Veneer-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/1-tools/veneer/Veneer-webfont.woff2") format("woff2"), url("/assets/css/1-tools/veneer/Veneer-webfont.woff") format("woff"), url("/assets/css/1-tools/veneer/Veneer-webfont.ttf") format("truetype"), url("/assets/css/1-tools/veneer/Veneer-webfont.svg#veneerregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -145,13 +156,94 @@ td, th {
 
 /*	Typography presets
  * ------------------------------------	 */
+h1 {
+  font-family: "veneerregular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+  cursor: default; }
+
+h2 {
+  font-family: "veneerregular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 5em;
+  cursor: default; }
+
+h3 {
+  font-family: "veneerregular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  cursor: default; }
+
+p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  cursor: default;
+  font-size: 1em; }
+
 /* Links
  * ------------------------------------	 */
+a {
+  color: #FFF; }
+
 /* Selection colors (easy to forget)
  * ------------------------------------	 */
 /* Basic Styles
  * ------------------------------------	 */
+body {
+  height: 3000px;
+  width: 100%; }
+
+.logo {
+  height: 100%;
+  margin-top: 40px; }
+
 header {
   height: 100vh;
+  width: 100%;
   background: url(../img/wood.jpg) center center;
   background-size: cover; }
+  header h1 {
+    float: left;
+    width: 100%;
+    margin-top: 300px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-align: center; }
+  header h3 {
+    float: left;
+    width: 100%;
+    margin-top: -100px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-align: center;
+    color: #FFF; }
+    header h3 .bbq {
+      color: #C2401F; }
+
+.about-container {
+  background: url(../img/brick-background.png);
+  height: 500px; }
+  .about-container .front-view {
+    padding-left: 10%;
+    padding-top: 6%;
+    float: left; }
+  .about-container .about-heading {
+    width: 40%;
+    float: right;
+    text-align: left;
+    margin-right: 10%;
+    padding-top: 0.5%;
+    color: #C2401F; }
+  .about-container .about-body {
+    float: right;
+    width: 30%;
+    margin-right: 20%;
+    margin-top: -4%; }
+
+.our-menu {
+  background: url(/assets/img/menu-background.jpeg) center center;
+  background-size: cover;
+  height: 90vh; }
