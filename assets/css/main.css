@@ -223,27 +223,84 @@ header {
     header h3 .bbq {
       color: #C2401F; }
 
-.about-container {
-  background: url(../img/brick-background.png);
-  height: 500px; }
-  .about-container .front-view {
-    padding-left: 10%;
-    padding-top: 6%;
-    float: left; }
-  .about-container .about-heading {
-    width: 40%;
-    float: right;
-    text-align: left;
-    margin-right: 10%;
-    padding-top: 0.5%;
-    color: #C2401F; }
-  .about-container .about-body {
-    float: right;
-    width: 30%;
-    margin-right: 20%;
-    margin-top: -4%; }
+.about {
+  width: 100%;
+  background: url(../img/brick-background.png); }
+  .about .about-container {
+    margin: 0 auto;
+    height: 500px;
+    max-width: 1300px; }
+    .about .about-container .front-view {
+      padding-left: 10%;
+      padding-top: 70px;
+      float: left; }
+    .about .about-container .about-heading {
+      width: 30%;
+      max-width: 450px;
+      float: left;
+      text-align: left;
+      margin-left: 150px;
+      padding-top: 30px;
+      color: #C2401F; }
+    .about .about-container .about-body {
+      float: left;
+      text-align: left;
+      margin-left: 150px;
+      width: 30%;
+      max-width: 450px;
+      margin-top: -4%; }
+    .about .about-container a.link {
+      background: #C2401F;
+      float: left;
+      text-align: left;
+      width: 170px;
+      height: 33px;
+      border-radius: 5px;
+      margin-left: 150px;
+      text-align: center;
+      text-decoration: none;
+      padding-top: 17px;
+      font-family: "Helvetica";
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased; }
+      .about .about-container a.link a.link:hover {
+        background: green; }
 
-.our-menu {
-  background: url(/assets/img/menu-background.jpeg) center center;
+.menu-container {
+  background: url(/assets/img/menu-background3.jpg) center center;
   background-size: cover;
-  height: 90vh; }
+  height: 500px; }
+  .menu-container .our-menu {
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto; }
+    .menu-container .our-menu .hat {
+      text-align: center;
+      margin-top: 100px; }
+    .menu-container .our-menu h1.menu-header {
+      margin-top: 0px;
+      color: white;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      font-size: 6em; }
+    .menu-container .our-menu a.button-box {
+      text-transform: uppercase;
+      font-family: "Helvetica";
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      text-decoration: none;
+      font-weight: 800;
+      padding-top: 16px;
+      border-radius: 4px;
+      background-color: #c2401f;
+      opacity: 0.902;
+      position: absolute;
+      left: 548px;
+      width: 181px;
+      height: 27px;
+      margin-top: -40px; }
+    .menu-container .our-menu a.button-box:hover {
+      background-color: #a53518; }
