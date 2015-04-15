@@ -193,6 +193,46 @@ body {
   height: 3000px;
   width: 100%; }
 
+/* Section - Parallax */
+/**************************/
+.parallax-world-of-ugg .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 00px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(/assets/img/menu-background3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px; } }
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 420px; }
+
+  #parallax-world-of-ugg h2 {
+    font-size: 30px; }
+
+  #parallax-world-of-ugg .block {
+    padding: 30px; }
+
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 290px; } }
 .logo {
   height: 100%;
   margin-top: 40px; }
@@ -201,17 +241,21 @@ header {
   height: 100vh;
   width: 100%;
   background: url(../img/wood.jpg) center center;
-  background-size: cover; }
+  background-size: cover;
+  position: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   header h1 {
     float: left;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 20%;
     color: white;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     text-align: center; }
-  header h3 {
+  header h3.sub {
     float: left;
     width: 100%;
     margin-top: -100px;
@@ -220,9 +264,16 @@ header {
     -moz-font-smoothing: antialiased;
     text-align: center;
     color: #FFF; }
-    header h3 .bbq {
+    header h3.sub .bbq {
       color: #C2401F; }
 
+@media screen and (min-width: 1500px) {
+  h1 {
+    font-size: 9em; }
+
+  h3.sub {
+    font-size: 7em;
+    line-height: 40px; } }
 .about {
   width: 100%;
   background: url(../img/brick-background.png); }
@@ -267,25 +318,29 @@ header {
       .about .about-container a.link a.link:hover {
         background: green; }
 
-.menu-container {
+.parallax-one {
   background: url(/assets/img/menu-background3.jpg) center center;
   background-size: cover;
   height: 500px; }
-  .menu-container .our-menu {
+  .parallax-one .our-menu {
     width: 1024px;
     text-align: center;
-    margin: 0 auto; }
-    .menu-container .our-menu .hat {
+    margin: 0 auto;
+    position: relative; }
+    .parallax-one .our-menu .hat {
       text-align: center;
-      margin-top: 100px; }
-    .menu-container .our-menu h1.menu-header {
+      margin-top: 50px; }
+    .parallax-one .our-menu h1.menu-header {
       margin-top: 0px;
       color: white;
       font-smoothing: antialiased;
       -webkit-font-smoothing: antialiased;
       -moz-font-smoothing: antialiased;
-      font-size: 6em; }
-    .menu-container .our-menu a.button-box {
+      font-size: 6em;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px; }
+    .parallax-one .our-menu a.button-box {
       text-transform: uppercase;
       font-family: "Helvetica";
       font-smoothing: antialiased;
@@ -293,14 +348,18 @@ header {
       -moz-font-smoothing: antialiased;
       text-decoration: none;
       font-weight: 800;
-      padding-top: 16px;
       border-radius: 4px;
       background-color: #c2401f;
-      opacity: 0.902;
-      position: absolute;
-      left: 548px;
-      width: 181px;
-      height: 27px;
-      margin-top: -40px; }
-    .menu-container .our-menu a.button-box:hover {
+      opacity: 0.9;
+      width: 180px;
+      height: 16px;
+      padding: 16px;
+      padding-top: 20px;
+      display: inline-block; }
+    .parallax-one .our-menu a.button-box:hover {
       background-color: #a53518; }
+
+.community {
+  width: 100%;
+  height: 500px;
+  background: url(../img/brick-background.png); }

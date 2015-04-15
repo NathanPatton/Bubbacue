@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="/assets/css/1-base/base.sass">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/3-modules/component.css" />
-    <script src="/assets/js/header/modernizr.custom.js"></script>     
+    <script src="/assets/js/header/modernizr.custom.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/js/parallax/parallax.js"></script>   
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
     
     <div class="cbp-af-header">
         <div class="cbp-af-inner">
-            <img class="logo" src="/assets/img/logo.png" alt="Bubbacue Belfast Logo">
+            <img class="logo" src="/assets/img/logo.png" draggable="false" alt="Bubbacue Belfast Logo">
             <nav>
                 <a href="#">About Us</a>
                 <a href="#">Our Menu</a>
@@ -28,7 +32,7 @@
     
     <header>
         <h1>Welcome to bubbacue</h1>
-        <h3>Real American <span class="bbq">BBQ</span></h3>
+        <h3 class="sub">Real American <span class="bbq">BBQ</span></h3>
     </header>
     
     <section class="about">
@@ -42,15 +46,23 @@
     
     </section><!--About-->
     
-    <section class="menu-container">
-	    
-	    <div class="our-menu">
-	       <img src="assets/img/hat.png" draggable="false" class="hat" alt="Chiefs Hat">
-		   <h1 class="menu-header">Our Menu</h1>
-		   <a class="button-box" href="index.html">View Menu</a>
-	    </div><!--Our Menu-->
+        <div class="parallax-world-of-ugg">
 
-    </section>
+		    <section class="parallax-one">
+			    
+			    <div class="our-menu">
+			       <img src="assets/img/hat.png" draggable="false" class="hat" alt="Chiefs Hat">
+				   <h1 class="menu-header">Our Menu</h1>
+				   <a class="button-box" href="index.html">View Menu</a>
+			    </div><!--Our Menu-->
+		
+		    </section><!--Menu Container-->
+    
+    </div><!--Parallax-->
+
+    
+    <section class="community">
+    </section><!--Community-->
     
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="/assets/js/app.js"></script>
