@@ -233,6 +233,83 @@ body {
   #parallax-world-of-ugg .block {
     padding: 30px 15px;
     width: 290px; } }
+.form {
+  width: 28.5em;
+  padding: 1.5em 0;
+  float: left;
+  margin-top: -50px; }
+
+form p {
+  margin-bottom: 1.5em; }
+
+*::-webkit-input-placeholder {
+  color: #ababab; }
+
+*:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ababab; }
+
+*::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ababab; }
+
+*:-ms-input-placeholder {
+  /* IE10+ */
+  color: #ababab; }
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+  width: 90%;
+  line-height: 1.5em;
+  font-family: inherit;
+  border: none;
+  color: #121212;
+  background: #ededed;
+  overflow: auto;
+  resize: none;
+  padding-top: 0.75em;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0.75em; }
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  height: 1.5em; }
+
+textarea {
+  height: 6em;
+  vertical-align: top;
+  /* removes akward space directly below textarea */ }
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border: none; }
+
+input[type=submit] {
+  border: none;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: inherit;
+  line-height: 1.5em;
+  font-size: inherit;
+  cursor: pointer;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  color: #ababab; }
+  input[type=submit]:hover {
+    color: #fff;
+    background: #C2401F; }
+
 .logo {
   height: 100%;
   margin-top: 40px; }
@@ -240,7 +317,7 @@ body {
 header {
   height: 100vh;
   width: 100%;
-  background: url(../img/wood.jpg) center center;
+  background: url(../img/header-background.jpg) center center;
   background-size: cover;
   position: center;
   justify-content: center;
@@ -321,12 +398,13 @@ header {
 .parallax-one {
   background: url(/assets/img/menu-background3.jpg) center center;
   background-size: cover;
-  height: 500px; }
+  height: 400px; }
   .parallax-one .our-menu {
     width: 1024px;
     text-align: center;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    margin-top: -80px; }
     .parallax-one .our-menu .hat {
       text-align: center;
       margin-top: 50px; }
@@ -361,5 +439,297 @@ header {
 
 .community {
   width: 100%;
-  height: 500px;
-  background: url(../img/brick-background.png); }
+  height: 950px;
+  background: url(../img/brick-background.png);
+  float: left; }
+  .community .com-container {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center; }
+    .community .com-container .com-sub {
+      font-size: 5.25em;
+      color: #C2401F;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      margin-top: -90px; }
+    .community .com-container .box1 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      margin-left: 85px; }
+      .community .com-container .box1 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box1 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: -2px; }
+      .community .com-container .box1 .twitter {
+        padding-left: 60px;
+        padding-top: 20px; }
+    .community .com-container .box2 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      background-image: url(/assets/img/gallery1.jpg);
+      background-position: center;
+      background-size: cover; }
+      .community .com-container .box2 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box2 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 15px; }
+      .community .com-container .box2 .twitter {
+        padding-left: 60px;
+        padding-top: 40px; }
+    .community .com-container .box3 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px; }
+      .community .com-container .box3 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box3 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 15px; }
+      .community .com-container .box3 .twitter {
+        padding-left: 50px;
+        padding-top: 40px; }
+    .community .com-container .box4 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      background-image: url(/assets/img/gallery2.jpg);
+      background-position: center;
+      background-size: cover; }
+      .community .com-container .box4 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box4 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 15px; }
+      .community .com-container .box4 .twitter {
+        padding-left: 60px;
+        padding-top: 40px; }
+    .community .com-container .box5 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      margin-left: 85px;
+      margin-top: 30px; }
+      .community .com-container .box5 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box5 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 15px; }
+      .community .com-container .box5 .twitter {
+        padding-left: 100px;
+        padding-top: 40px; }
+    .community .com-container .box6 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      background-image: url(/assets/img/gallery3.jpg);
+      background-position: center;
+      background-size: cover;
+      margin-top: 30px; }
+      .community .com-container .box6 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box6 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 15px; }
+      .community .com-container .box6 .twitter {
+        padding-left: 60px;
+        padding-top: 40px; }
+    .community .com-container .box7 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      margin-top: 30px; }
+      .community .com-container .box7 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box7 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 35px; }
+      .community .com-container .box7 .twitter {
+        padding-left: 50px;
+        padding-top: 55px; }
+    .community .com-container .box8 {
+      width: 190px;
+      height: 190px;
+      background-color: #C2401F;
+      border-radius: 6px;
+      float: left;
+      margin-right: 30px;
+      background-image: url(/assets/img/gallery4.jpg);
+      background-position: center;
+      background-size: cover;
+      margin-top: 30px; }
+      .community .com-container .box8 .body-box {
+        text-align: left;
+        color: white;
+        font-family: "helvetica", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 200; }
+      .community .com-container .box8 .tweet {
+        color: white;
+        text-transform: uppercase;
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        font-family: "veneerregular", Arial, sans-serif;
+        float: left;
+        padding-left: 10px;
+        padding-top: 15px; }
+      .community .com-container .box8 .twitter {
+        padding-left: -110px;
+        padding-top: 40px; }
+  .community .comm {
+    width: 100%;
+    font-size: 3em;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px; }
+  .community .button-container {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center; }
+    .community .button-container a.button-box2 {
+      text-transform: uppercase;
+      font-family: "Helvetica";
+      text-align: center;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 4px;
+      background-color: #c2401f;
+      opacity: 0.9;
+      width: 160px;
+      height: 16px;
+      padding: 16px;
+      padding-top: 18px;
+      display: inline-block; }
+    .community .button-container a.button-box2:hover {
+      background-color: #a53518; }
+
+footer {
+  width: 100%;
+  background: url(/assets/img/footer.jpg) center center;
+  background-size: cover;
+  float: left; }
+  footer .footer-container {
+    width: 1024px;
+    margin: 0 auto; }
+    footer .footer-container h3.footer-heading {
+      color: white;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased; }
