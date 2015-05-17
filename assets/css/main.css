@@ -733,3 +733,6 @@ footer {
       font-smoothing: antialiased;
       -webkit-font-smoothing: antialiased;
       -moz-font-smoothing: antialiased; }
+    footer .footer-container .map {
+      padding-left: 30px;
+      float: right; }
